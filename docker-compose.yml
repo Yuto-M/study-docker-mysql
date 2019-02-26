@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    db:
+        image: mysql:5.7
+        env_file: .docker-env
+        container_name: "study-mysql5.7"
+        volumes:
+            - "study_mysql_db:/var/lib/mysql"
+volumes:
+    study_mysql_db:
