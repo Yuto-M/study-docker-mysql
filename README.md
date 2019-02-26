@@ -4,13 +4,14 @@ mysql勉強用にdockerで環境を作る
 
 ## Goal
 - `docker-compose up -d`でmysql, phpmyadminが実行できる環境が構築されるようにする
-    - docker-compose.ymlを書く
-    - envは別ファイルに書く
+    - ~~docker-compose.ymlを書く~~
+    - ~~envは別ファイルに書く~~
     - mysqlのconfファイルを用意してそれが使用されるようにする
 - コンテナを削除してもデータが消えないように永続化する
     - ~~data volumeを使用する~~
 - 永続化したデータのbackup・restoreができるようにする
 - MySQLWorkbenchが接続できるようにする
+    - userの権限をなんか変えるっぽい
 - コンテナを立ち上げたらDBにデータが用意されているようにする
     - どのデータが入っている状態にするかはこれから決める
 - 使用するmysqlのversionをdocker-envで決定できるようにする
